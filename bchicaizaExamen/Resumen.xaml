@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="bchicaizaExamen.Resumen">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="lblUsuario" TextColor="Red" HorizontalTextAlignment="End" FontSize="12"/>
+            <Label Text="RESUMEN" FontSize="30" HorizontalTextAlignment="Center" TextColor="Red"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Nombre" Grid.Row="0" Grid.Column="0" ></Label>
+                <Label x:Name="lblNombre" Grid.Row="0" Grid.Column="1" ></Label>
+                
+                <Label Text="Apellido" Grid.Row="1" Grid.Column="0" ></Label>
+                <Label x:Name="lblApellido" Grid.Row="1" Grid.Column="1" ></Label>
+                
+                <Label Text="Edad" Grid.Row="2" Grid.Column="0" ></Label>
+                <Label x:Name="lblEdad" Grid.Row="2" Grid.Column="1" ></Label>
+
+                <Label Text="Fecha" Grid.Row="3" Grid.Column="0" ></Label>
+                <Label x:Name="lblFecha" Grid.Row="3" Grid.Column="1" ></Label>
+                
+                <Label Text="Pais" Grid.Row="4" Grid.Column="0" ></Label>
+                <Label x:Name="lblPais" Grid.Row="4" Grid.Column="1" ></Label>
+                
+                <Label Text="Ciudad" Grid.Row="5" Grid.Column="0" ></Label>
+                <Label x:Name="lblCiudad" Grid.Row="5" Grid.Column="1" ></Label>
+                
+                <Label Text="Monto inicial" Grid.Row="6" Grid.Column="0" ></Label>
+                <Label x:Name="lblMontoInicial" Grid.Row="6" Grid.Column="1" ></Label>
+                
+                <Label Text="Pago mensual" Grid.Row="7" Grid.Column="0" ></Label>
+                <Label x:Name="lblMontoMensual" Grid.Row="7" Grid.Column="1" ></Label>
+                
+                <Label Text="Pago total" Grid.Row="8" Grid.Column="0" ></Label>
+                <Label x:Name="lblPagoTotal" Grid.Row="8" Grid.Column="1" ></Label>
+            </Grid>
+            <Button Text="SALIR" x:Name="btnSalir" Clicked="btnSalir_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

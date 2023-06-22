@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             NavigationPage.HasNavigationBar="False"
+             x:Class="bchicaizaExamen.Login">
+    <ContentPage.Content>
+        <StackLayout Style="{StaticResource estiloStack}">
+            <Label HorizontalTextAlignment="Center" FontSize="20" TextColor="Red" Text="Login" ></Label>
+            <Image Source="https://sbsconsulting.com.ec/wp-content/uploads/2018/01/LOGO-UISRAEL-768x209.png"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+
+                </Grid.ColumnDefinitions>
+
+
+                <Label Text="USUARIO" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" Grid.Row="0" Grid.Column="0" ></Label>
+                <Entry x:Name="txtUsuario" Placeholder="Ingrese usuario" Grid.Row="0" Grid.Column="1" />
+
+                <Label Text="CLAVE" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" Grid.Row="1" Grid.Column="0"></Label>
+                <Entry x:Name="txtClave" IsPassword="True" Placeholder="Ingrese clave" Grid.Row="1" Grid.Column="1" />
+
+
+                <Button BackgroundColor="SkyBlue" Text="Ingresar" Grid.Row="3" Grid.Column="0" x:Name="btnIngresar" Clicked="btnIngresar_Clicked"/>
+                <Button BackgroundColor="Salmon" Text="Cancelar" Grid.Row="3" Grid.Column="1" x:Name="btnCancelar" Clicked="btnCancelar_Clicked"/>
+
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
